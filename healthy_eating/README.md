@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is a healthy eating game for kids ages 3-6 years old. 
 
-Things you may want to cover:
+Pahlka Posse is a collaborative group of students interested in making apps for a better world. We welcome everyone's input no matter their skill level. That said, before contributing, please:
 
-* Ruby version
+* Make sure you're running the appropriate Ruby and Rails version by typing _Ruby -v_ and _Rails -v_ into your terminal (we're working with Rails 5.0.0.1, and Ruby 2.3.0p0)
 
-* System dependencies
+* Check out a Waffle card issue and assign it to yourself
 
-* Configuration
+* Check out a new branch following the naming convention 'feature_working_on_initials'
 
-* Database creation
+* Commit every 25 minutes to keep track of your work and tag others in your commit messages 
 
-* Database initialization
+* Let others review your pull requests and merge them
 
-* How to run the test suite
+* Ask others for help if you get stuck on something
 
-* Services (job queues, cache servers, search engines, etc.)
+* Have fun!
 
-* Deployment instructions
 
-* ...
