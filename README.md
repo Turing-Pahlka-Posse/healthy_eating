@@ -1,4 +1,4 @@
-# Game Time Starter Kit
+# Healthy Eating Side Scrolling Mini-Game (Originally phlying Phish)
 
 To install the dependencies:
 
