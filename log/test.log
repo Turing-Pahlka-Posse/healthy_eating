@@ -39,3 +39,28 @@ Processing by HomeController#index as HTML
   Rendered home/index.html.erb within layouts/application (5.3ms)
 Completed 200 OK in 314ms (Views: 309.8ms | ActiveRecord: 0.0ms)
   [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (533.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "healthy_eating_test"[0m
+  [1m[35m (3861.9ms)[0m  [1m[35mCREATE DATABASE "healthy_eating_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-10-21 14:56:13 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 783ms (Views: 774.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (21.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (156.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "healthy_eating_test"[0m
+  [1m[35m (392.6ms)[0m  [1m[35mCREATE DATABASE "healthy_eating_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-10-21 15:04:25 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 175ms (Views: 172.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-10-21 15:04:26 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
