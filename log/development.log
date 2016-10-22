@@ -206,3 +206,192 @@ Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms)
   [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4168202333457557955)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for ::1 at 2016-10-22 09:15:04 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 685ms (Views: 681.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:15:46 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:16:36 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:17:20 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:21:08 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 119ms (Views: 116.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:22:10 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 112ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:22:33 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 83ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:23:09 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 83ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:23:22 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 83ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:24:12 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 94ms (Views: 92.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:26:52 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 156ms (Views: 154.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:27:30 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 83ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:28:50 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 148ms (Views: 146.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:29:59 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 148ms (Views: 146.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:30:41 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:31:08 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 587ms (Views: 583.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:32:08 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 513ms (Views: 510.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:34:11 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 208ms (Views: 205.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:34:40 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 113ms (Views: 111.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:35:14 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 131ms (Views: 129.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:36:29 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 119ms (Views: 117.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:41:08 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 158ms (Views: 156.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:42:02 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 180ms (Views: 178.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:42:16 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 121ms (Views: 119.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:42:21 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:42:34 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 79ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-22 09:46:10 -0600
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 591ms (Views: 588.5ms | ActiveRecord: 0.0ms)
+
+
