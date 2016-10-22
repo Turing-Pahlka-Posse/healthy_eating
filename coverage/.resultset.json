@@ -1,11 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Caleb/projects/pahlka/healthy_eating/app/helpers/application_helper.rb": [
+      "/Users/kerrysheldon/turing/pahlka/healthy_eating/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/Caleb/projects/pahlka/healthy_eating/app/controllers/home_controller.rb": [
+      "/Users/kerrysheldon/turing/pahlka/healthy_eating/app/controllers/home_controller.rb": [
         1,
         null,
         1,
@@ -13,39 +13,39 @@
         null,
         null
       ],
-      "/Users/Caleb/projects/pahlka/healthy_eating/app/controllers/application_controller.rb": [
+      "/Users/kerrysheldon/turing/pahlka/healthy_eating/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/Users/Caleb/projects/pahlka/healthy_eating/app/channels/application_cable/channel.rb": [
+      "/Users/kerrysheldon/turing/pahlka/healthy_eating/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/Caleb/projects/pahlka/healthy_eating/app/channels/application_cable/connection.rb": [
+      "/Users/kerrysheldon/turing/pahlka/healthy_eating/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/Caleb/projects/pahlka/healthy_eating/app/jobs/application_job.rb": [
+      "/Users/kerrysheldon/turing/pahlka/healthy_eating/app/jobs/application_job.rb": [
         0,
         0
       ],
-      "/Users/Caleb/projects/pahlka/healthy_eating/app/mailers/application_mailer.rb": [
+      "/Users/kerrysheldon/turing/pahlka/healthy_eating/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/Caleb/projects/pahlka/healthy_eating/app/models/application_record.rb": [
+      "/Users/kerrysheldon/turing/pahlka/healthy_eating/app/models/application_record.rb": [
         0,
         0,
         0
       ]
     },
-    "timestamp": 1477083866
+    "timestamp": 1477146013
   }
 }

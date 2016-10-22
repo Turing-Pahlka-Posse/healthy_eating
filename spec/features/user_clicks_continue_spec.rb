@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.feature describe 'user clicks continue' do
-  scenario 'user clicks continue and sees next part of story' do
+  scenario 'user clicks continue and sees next part of story', js: true do
     visit root_path
 
     click_button('Continue')
