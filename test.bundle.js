@@ -119,12 +119,12 @@
 	  };
 
 	  this.spacebarDown = function () {
-	    if (this.running === true) {
-	      this.world.playerHitBoxes.forEach(function (hitBox) {
-	        return hitBox.moveUp();
-	      });
-	      this.world.playerFish.moveUp();
-	    }
+	    // if(this.running === true){
+	    //   this.world.playerHitBoxes.forEach(function(hitBox){
+	    //       return hitBox.moveUp();
+	    //   });
+	    //   this.world.playerFish.moveUp();
+	    // }
 	    if (this.running === false) {
 	      this.reset();
 	      this.running = true;
@@ -135,6 +135,24 @@
 
 	  this.spacebarUp = function () {
 	    return false;
+	  };
+
+	  this.arrowUp = function () {
+	    if (this.running === true) {
+	      this.world.playerHitBoxes.forEach(function (hitBox) {
+	        return hitBox.moveUp();
+	      });
+	      this.world.playerFish.moveUp();
+	    }
+	  };
+
+	  this.arrowDown = function () {
+	    if (this.running === true) {
+	      this.world.playerHitBoxes.forEach(function (hitBox) {
+	        return hitBox.moveDown();
+	      });
+	      this.world.playerFish.moveDown();
+	    }
 	  };
 
 	  this.increaseDifficulty = function () {
@@ -208,7 +226,8 @@
 	    this.setMode();
 	    this.increaseDifficulty();
 
-	    this.world.checkStatusToShiftNewWalls(this.generateNewWallHeight(this.difficultyFactor), this.speed, this.viewMode);
+	    // this.world.checkStatusToShiftNewWalls((this.generateNewWallHeight(this.difficultyFactor)), this.speed, this.viewMode);
+	    this.world.checkStatusToShiftNewWalls(100, this.speed, this.viewMode);
 
 	    this.randomizeRockCreation();
 	    this.world.draw();
@@ -366,7 +385,8 @@
 	  this.rockTexture = new Image();
 	  this.rockTexture.src = './lib/imgs/rocktexture-sm.png';
 	  this.waterTexture = new Image();
-	  this.waterTexture.src = './lib/imgs/water.png';
+	  // this.waterTexture.src = './lib/imgs/water.png';
+	  this.waterTexture.src = './lib/imgs/cafefloor.png';
 	  this.playerFish = new Player(this.canvas, null, null, null, null, "image", this.playerImage); //Player(canvas, x, y, height, width, type, image)
 	  this.playerHitBoxes = [];
 	  this.ceiling = [];
@@ -427,13 +447,13 @@
 	  };
 
 	  this.checkCollisions = function () {
-	    var collision = true;
-	    for (var i = 0; i < this.numberOfWallSections; i++) {
-	      collision = this.ceiling[i].collisionDetectAllBoxes() || this.floor[i].collisionDetectAllBoxes();
-	      if (collision === true) {
-	        return collision;
-	      }
-	    }
+	    var collision = false;
+	    // for(var i = 0; i < this.numberOfWallSections; i++){
+	    //   collision = this.ceiling[i].collisionDetectAllBoxes() || this.floor[i].collisionDetectAllBoxes();
+	    //   if(collision === true){
+	    //     return collision;
+	    //   }
+	    // }
 
 	    for (var j = 0; j < this.rocks.length; j++) {
 	      collision = this.rocks[j].collisionDetectAllBoxes();
@@ -550,10 +570,12 @@
 	  };
 
 	  this.move = function () {
-	    this.playerHitBoxes.forEach(function (hitBox) {
-	      return hitBox.moveDown();
-	    });
-	    this.playerFish.moveDown();
+	    //every frame move
+	    // this.playerHitBoxes.forEach(function(hitBox){
+	    //      return hitBox.moveDown();
+	    // });
+	    // this.playerFish.moveDown();
+	    //
 	    this.moveObstacles();
 	    this.moveMushrooms();
 	  };

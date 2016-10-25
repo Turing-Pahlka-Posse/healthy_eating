@@ -59,6 +59,8 @@
 	// var timeoutMouse;
 	var timeoutSpacebar;
 	var spacebarPressed = false;
+	var keyUpPressed = false;
+	var keyDownPressed = false;
 
 	$document.ready(function () {
 	  game.world.loadImages();
@@ -66,25 +68,39 @@
 	  canvas.click();
 	});
 
-	$document.keypress(function (e) {
-
-	  //if spacebar is pressed
-	  if (e.keyCode === 0 || e.keyCode === 32) {
+	$document.keydown(function (e) {
+	  //if up is pressed
+	  if (e.keyCode === 38) {
+	    console.log('up was pressed');
 	    e.preventDefault();
-
-	    if (spacebarPressed === false) {
-	      spacebarPressed = true;
-	      game.spacebarDown();
-	      gameLoop();
-	      timeoutSpacebar = setInterval(function () {
-	        game.spacebarDown();
+	    if (keyUpPressed === false) {
+	      keyUpPressed = true;
+	      keyDownPressed = false;
+	      game.arrowUp();
+	      timeoutUp = setInterval(function () {
+	        game.arrowUp();
 	      }, 8);
 	    }
 	  }
 
-	  //if up is pressed
-	  if (e.keyCode === 38) {
-	    console.log('up was pressed');
+	  if (e.keyCode === 40) {
+	    console.log('down was pressed');
+	    e.preventDefault();
+	    if (keyDownPressed === false) {
+	      keyDownPressed = true;
+	      keyUpPressed = false;
+	      game.arrowDown();
+	      timeoutDown = setInterval(function () {
+	        game.arrowDown();
+	      }, 8);
+	    }
+	  }
+	});
+
+	$document.keypress(function (e) {
+	  console.log(e.keyCode);
+	  //if spacebar is pressed
+	  if (e.keyCode === 0 || e.keyCode === 32) {
 	    e.preventDefault();
 	    if (spacebarPressed === false) {
 	      spacebarPressed = true;
@@ -101,8 +117,15 @@
 	  if (e.keyCode === 0 || e.keyCode === 32) {
 	    e.preventDefault();
 	    spacebarPressed = false;
-	    clearInterval(timeoutSpacebar);
 	    game.spacebarUp();
+	  }
+	  if (e.keyCode === 38) {
+	    keyUpPressed = false;
+	    clearInterval(timeoutUp);
+	  }
+	  if (e.keyCode === 40) {
+	    keyDownPressed = false;
+	    clearInterval(timeoutDown);
 	  }
 	});
 
@@ -10405,12 +10428,12 @@
 	  };
 
 	  this.spacebarDown = function () {
-	    if (this.running === true) {
-	      this.world.playerHitBoxes.forEach(function (hitBox) {
-	        return hitBox.moveUp();
-	      });
-	      this.world.playerFish.moveUp();
-	    }
+	    // if(this.running === true){
+	    //   this.world.playerHitBoxes.forEach(function(hitBox){
+	    //       return hitBox.moveUp();
+	    //   });
+	    //   this.world.playerFish.moveUp();
+	    // }
 	    if (this.running === false) {
 	      this.reset();
 	      this.running = true;
@@ -10421,6 +10444,24 @@
 
 	  this.spacebarUp = function () {
 	    return false;
+	  };
+
+	  this.arrowUp = function () {
+	    if (this.running === true) {
+	      this.world.playerHitBoxes.forEach(function (hitBox) {
+	        return hitBox.moveUp();
+	      });
+	      this.world.playerFish.moveUp();
+	    }
+	  };
+
+	  this.arrowDown = function () {
+	    if (this.running === true) {
+	      this.world.playerHitBoxes.forEach(function (hitBox) {
+	        return hitBox.moveDown();
+	      });
+	      this.world.playerFish.moveDown();
+	    }
 	  };
 
 	  this.increaseDifficulty = function () {
@@ -10494,7 +10535,8 @@
 	    this.setMode();
 	    this.increaseDifficulty();
 
-	    this.world.checkStatusToShiftNewWalls(this.generateNewWallHeight(this.difficultyFactor), this.speed, this.viewMode);
+	    // this.world.checkStatusToShiftNewWalls((this.generateNewWallHeight(this.difficultyFactor)), this.speed, this.viewMode);
+	    this.world.checkStatusToShiftNewWalls(100, this.speed, this.viewMode);
 
 	    this.randomizeRockCreation();
 	    this.world.draw();
@@ -10652,7 +10694,8 @@
 	  this.rockTexture = new Image();
 	  this.rockTexture.src = './lib/imgs/rocktexture-sm.png';
 	  this.waterTexture = new Image();
-	  this.waterTexture.src = './lib/imgs/water.png';
+	  // this.waterTexture.src = './lib/imgs/water.png';
+	  this.waterTexture.src = './lib/imgs/cafefloor.png';
 	  this.playerFish = new Player(this.canvas, null, null, null, null, "image", this.playerImage); //Player(canvas, x, y, height, width, type, image)
 	  this.playerHitBoxes = [];
 	  this.ceiling = [];
@@ -10713,13 +10756,13 @@
 	  };
 
 	  this.checkCollisions = function () {
-	    var collision = true;
-	    for (var i = 0; i < this.numberOfWallSections; i++) {
-	      collision = this.ceiling[i].collisionDetectAllBoxes() || this.floor[i].collisionDetectAllBoxes();
-	      if (collision === true) {
-	        return collision;
-	      }
-	    }
+	    var collision = false;
+	    // for(var i = 0; i < this.numberOfWallSections; i++){
+	    //   collision = this.ceiling[i].collisionDetectAllBoxes() || this.floor[i].collisionDetectAllBoxes();
+	    //   if(collision === true){
+	    //     return collision;
+	    //   }
+	    // }
 
 	    for (var j = 0; j < this.rocks.length; j++) {
 	      collision = this.rocks[j].collisionDetectAllBoxes();
@@ -10836,10 +10879,12 @@
 	  };
 
 	  this.move = function () {
-	    this.playerHitBoxes.forEach(function (hitBox) {
-	      return hitBox.moveDown();
-	    });
-	    this.playerFish.moveDown();
+	    //every frame move
+	    // this.playerHitBoxes.forEach(function(hitBox){
+	    //      return hitBox.moveDown();
+	    // });
+	    // this.playerFish.moveDown();
+	    //
 	    this.moveObstacles();
 	    this.moveMushrooms();
 	  };
