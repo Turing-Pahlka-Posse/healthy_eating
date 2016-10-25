@@ -1,0 +1,14 @@
+body{
+  background-color: #c1c1dd;
+}
+
+#homepage-story{
+  text-align: center;
+  margin-top: 20%;
+}
+
+#story-line{
+  font-family: sans-serif;
+  font-size: 25px;
+  color: #1c2a43;
+}
